@@ -1,0 +1,105 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+apply plugin: 'org.greenrobot.greendao'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'boxtrollsgames'
+            keyPassword 'boxtrollsgamesboxtrollsgames'
+            storeFile file('D:/Android_studio_project/key_store/boxtrollsgames')
+            storePassword 'boxtrollsgamesboxtrollsgames'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion "24.0.2"
+    defaultConfig {
+        applicationId "com.sibozn.peo"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 7
+        versionName "1.0.7"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            zipAlignEnabled true
+            shrinkResources true
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        // apk_渠道名-版本号-版本名称-编译时间.apk
+                        def fileName = "PEO_${variant.productFlavors[0].name}" +
+                                "-${defaultConfig.versionCode}-${defaultConfig.versionName}-${releaseTime()}.apk"
+                        output.outputFile = new File(outputFile.parent, fileName)
+                    }
+                }
+            }
+        }
+        debug {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'),'proguard-rules.pro'
+            zipAlignEnabled true
+            shrinkResources true
+        }
+    }
+    productFlavors {
+        qihu360 {} // 360手机助手
+        yingyongbao {} // 腾讯应用宝
+        wandoujia {} // 豌豆荚
+        google {}//google
+    }
+    productFlavors.all {
+        flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+}
+
+def releaseTime() {
+    return new Date().format("yyyyMMdd", TimeZone.getTimeZone("UTC"))
+}
+
+greendao {
+    schemaVersion 1
+    daoPackage 'com.sibozn.peo.gen'
+    targetGenDir 'src/main/java'
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:25.0.0'
+    compile 'com.android.support:design:25.0.0'
+    compile 'com.jakewharton:butterknife:8.3.0'
+    apt 'com.jakewharton:butterknife-compiler:8.3.0'
+    //compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.daimajia.slider:library:1.1.5@aar'
+    //compile 'com.google.android.gms:play-services:9.8.0'
+    compile 'com.yolanda.nohttp:nohttp:1.1.0'
+    compile 'com.yanzhenjie.nohttp:okhttp:1.1.0'
+    // 数据库类库
+    compile 'org.greenrobot:greendao:3.2.0'
+    compile 'com.github.yuweiguocn:GreenDaoUpgradeHelper:v1.1.0'
+    //compile'org.greenrobot:greendao-generator:3.0.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    // 友盟统计
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    // google admob
+    compile 'com.google.firebase:firebase-ads:9.8.0'
+    //compile 'com.google.android.gms:play-services-ads:9.8.0'
+    compile 'com.google.firebase:firebase-core:9.8.0'
+    compile 'com.google.firebase:firebase-messaging:9.8.0'
+    // 剪切图片
+    compile 'com.isseiaoki:simplecropview:1.1.4'
+    // Runtime permissions
+    apt 'com.github.hotchemi:permissionsdispatcher-processor:latest.integration'
+    compile 'com.github.hotchemi:permissionsdispatcher:latest.integration'
+}

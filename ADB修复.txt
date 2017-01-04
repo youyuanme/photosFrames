@@ -1,0 +1,9 @@
+1.打开cmd，输入adb kill-server,adb start-server, adb nodaemon server,显示
+2.输入netstart -ano|findstr "5037"
+3.结束占用进程
+4.在cmd中，重新adb start-server，会看到成功启动了
+5.重启Android studio,正常启动完成
+
+如果上诉第二步并未被占用使用一下方法
+1.将本机C:\WINDOWS\System32下的adb.exe文件复制到C:Windows\System64下。
+2.将本机C:\WINDOWS\System32下的AdbWinApi.dll文件复制到C:\Windows\SysWOW64下

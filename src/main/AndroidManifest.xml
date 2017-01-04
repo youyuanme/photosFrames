@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.sibozn.peo">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:name="com.sibozn.peo.application.MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/BaseTheme">
+        <!--  &lt;!&ndash;This meta-data tag is required to use Google Play Services.&ndash;&gt;
+          <meta-data
+              android:name="com.google.android.gms.version"
+              android:value="@integer/google_play_services_version"/>-->
+        <!--友盟统计-->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="58476f1a310c9339380002b6"/>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="google"/>
+
+        <activity
+            android:name=".activity.MainActivity"
+            >
+            <!--android:theme="@style/SplashTheme"-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.FrameActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:hardwareAccelerated="false"
+            android:theme="@style/FullscreenAppTheme">
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+             接收单图
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+            接收文本
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+            接收多图
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".activity.DetailActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".activity.CropActivity"
+            android:exported="false"/>
+        <!-- [START firebase_service] -->
+        <service android:name=".service.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <!-- [END firebase_service] -->
+        <!-- [START firebase_iid_service] -->
+        <service android:name=".service.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <!-- [END firebase_iid_service] -->
+
+        <!--   &lt;!&ndash;Include the AdActivity configChanges and theme. &ndash;&gt;
+           <activity
+               android:name="com.google.android.gms.ads.AdActivity"
+               android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+               android:theme="@android:style/Theme.Translucent"/>-->
+        <!--
+        <service
+            android:name=".service.DownloadService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+        -->
+    </application>
+
+</manifest>

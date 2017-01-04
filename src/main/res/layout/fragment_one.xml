@@ -1,0 +1,93 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.OneFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:auto_cycle="true"
+            app:indicator_visibility="visible"
+            app:pager_animation="Accordion"
+            app:pager_animation_span="1100"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/hot"/>
+
+        <com.sibozn.peo.view.MyListView
+            android:id="@+id/hot_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#D2D2D2"/>
+
+        <com.google.android.gms.ads.NativeExpressAdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            app:adSize="FULL_WIDTHx80"
+            app:adUnitId="ca-app-pub-7625436824527004/6295429170">
+        </com.google.android.gms.ads.NativeExpressAdView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/new_"/>
+
+        <com.sibozn.peo.view.MyListView
+            android:id="@+id/new_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"/>
+        <!-- <android.support.v7.widget.RecyclerView
+             android:id="@+id/recycle_view"
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="1"
+             />-->
+        <!-- <com.daimajia.slider.library.Indicators.PagerIndicator
+             android:id="@+id/app_indicator"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_centerHorizontal="true"
+             android:layout_marginBottom="20dp"
+             android:gravity="center"
+             app:selected_color="#0095BF"
+             app:selected_drawable="@mipmap/bird"
+             app:selected_height="6dp"
+             app:selected_padding_left="5dp"
+             app:selected_padding_right="5dp"
+             app:selected_width="6dp"
+             app:shape="oval"
+             app:unselected_color="#55333333"
+             app:unselected_height="6dp"
+             app:unselected_padding_left="5dp"
+             app:unselected_padding_right="5dp"
+             app:unselected_width="6dp"
+             />-->
+    </LinearLayout>
+</ScrollView>

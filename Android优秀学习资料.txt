@@ -1,0 +1,131 @@
+
+任玉刚, 博客 :  http://blog.csdn.net/singwhatiwanna, github : https://github.com/singwhatiwanna 
+
+Trinea, 博客 : http://www.trinea.cn/, github : https://github.com/trinea
+
+郭林, 博客 : http://blog.csdn.net/guolin_blog
+
+鸿洋, 博客 : http://blog.csdn.net/lmj623565791
+
+Android网络请求心路历程  http://www.jianshu.com/p/3141d4e46240
+Android网络请求--OkHttp http://www.jianshu.com/p/87f81871fec4
+Okhttp的简单介绍和使用 http://www.jianshu.com/p/d7777c828ee8
+严振杰，博客 http://blog.csdn.net/yanzhenjie1003
+Android Design Support Library使用详解 http://www.tuicool.com/articles/RnAneuB
+Android 开源项目： Material Design 风格 底部导航栏 http://www.tuicool.com/articles/7Zvem2v
+PagerBottomTabStrip https://github.com/tyzlmjj/PagerBottomTabStrip
+Android学习之BottomNavigationBar实现Android特色底部导航栏 http://blog.csdn.net/qq_16131393/article/details/51419901
+谷歌集成地图:  https://developers.google.com/maps/documentation/android-api/infowindows?hl=zh-cn#info_window_events
+Android应用Design Support Library完全使用实例 http://www.open-open.com/lib/view/open1433385856119.html
+Android Material Design简单使用  http://www.cnblogs.com/android-blogs/p/5632103.html
+	ANDROID干货 http://www.cnblogs.com/tianmanyi/p/5509404.html
+	Android开源项目分类汇总 http://hunankeda110.iteye.com/blog/2103569
+Android-Universal-Image-Loader详解 http://blog.csdn.net/yang786654260/article/details/44300833
+Glide 系列预览 http://mrfu.me/2016/02/27/Glide_Caching_Basics/
+Giphy/GiphyAPI https://github.com/Giphy/GiphyAPI
+butterknife https://github.com/JakeWharton/butterknife
+Android-Librarys-Top-100.md https://github.com/Freelander/Android_Data/blob/master/Android-Librarys-Top-100.md
+国内即时通讯和社交系统平台   https://github.com/CameloeAnthony/Perfect_IM_SNS
+【转】android MD设计 http://www.cnblogs.com/syjhsgcc/p/4771931.html
+图片压缩工具： https://www.tinypng.com/
+
+推荐网站
+  1.Material Palette  http://www.materialpalette.com/pink/amber
+  2.Material Up    http://www.materialup.com/posts/c/market
+
+Jianqiu's blog  http://niorgai.github.io/2016/03/20/Android-transulcent-status-bar/
+
+
+android-saripaar：Android UI输入验证框架 http://blog.chengyunfeng.com/?p=530  https://github.com/ragunathjawahar/android-saripaar
+
+OkHttp使用教程； www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/0106/2275.html
+FastJson--阿里巴巴公司开源的速度最快的Json和对象转换工具 http://blog.csdn.net/djun100/article/details/24237371
+
+
+夏安明, 博客 : http://blog.csdn.net/xiaanming
+
+张兴业, 博客: http://blog.csdn.net/xyz_lmn
+
+爱哥， 博客 : http://blog.csdn.net/aigestudio
+
+徐医生, 博客 :  http://blog.csdn.net/eclipsexys
+
+马天宇, 博客 : http://litesuits.com/, github : https://github.com/litesuits
+
+浩气雄鹰, 博客 : http://blog.csdn.net/jltxgcy
+
+王鹏，博客 : http://blog.csdn.net/wangjinyu501/
+
+阳光小强, 博客 : http://blog.csdn.net/dawanganban/
+
+谭东 , 博客 : http://www.aplesson.com/
+
+胡凯, 博客 : http://hukai.me/, github : https://github.com/kesenhoo
+
+qiujuer.net, 博客 : http://blog.csdn.net/qiujuer/, github : https://github.com/qiujuer
+
+张涛， 博客 : http://blog.kymjs.com
+
+兰亭风雨 , 博客 : http://blog.csdn.net/ns_code
+老罗 http://blog.csdn.net/luoshengyang/article/details/6557518
+Keegan小钢 http://keeganlee.me/post/android/20151031
+
+
+Mr.Simple ( 群主 ), 博客 : http://blog.csdn.net/bboyfeiyu, github : https://github.com/bboyfeiyu
+
+
+你应该关注的github项目 
+
+Android开发技术前线 :  https://github.com/bboyfeiyu/android-tech-frontier
+Android源码设计模式解析 : https://github.com/simple-android-framework/android_design_patterns_analysis
+
+android-open-source-projects : https://github.com/Trinea/android-open-project
+开源库架构解析 ( codekk , 参与的人高手众多 ):  https://github.com/android-cn/android-open-project-analy
+
+你应该关注的几个网站 
+
+http://androidweekly.net/
+http://androidweekly.cn/
+码农周刊 : http://weekly.manong.io/
+
+as android SDK更新网站 http://www.androiddevtools.cn
+微信支付 https://pay.weixin.qq.com/wiki/doc/api/app.php?chapter=8_3
+支付宝支付 https://b.alipay.com/order/productDetail.htm?productId=2013080604609654&tabId=4#ps-tabinfo-hash
+极光推送  http://www.jpush.com
+Node Media Client SDK   http://www.nodemedia.cn
+Android中脱离WebView使用WebSocket实现群聊和推送功能
+http://www.cnblogs.com/wlfcolin/p/5193583.html?utm_source=tuicool&utm_medium=referral
+http://www.tuicool.com/articles/Jn6jYbR
+
+使用GCM服务（Google Cloud Messaging）实现Android消息推送
+http://www.cnblogs.com/zhwl/p/3370426.html
+
+2015最新Android基础入门教程》 https://wizardforcel.gitbooks.io/w3school-android/content/149.html
+阅读Android源码的一些知识 http://www.open-open.com/lib/view/open1455200540245.html
+
+gcm 推送：http://my.oschina.net/nicsun/blog/98184
+
+/NodeMediaClient-Android/libs/java-websocket-1.3.0.jar
+
+使用SwipeRefreshLayout和RecyclerView实现仿“简书”下拉刷新和上拉加载更多
+http://blog.csdn.net/leoleohan/article/details/50989549
+泡在网上的日子 http://www.jcodecraeer.com/
+
+Android流行框架大全  http://blog.csdn.net/xiaole0313/article/details/51733353
+
+2016年最新810多套源码2.46GB免费一次性打包下载 http://neast.cn/forum.php?mod=viewthread&tid=26092&fromuid=5
+
+Material icons  https://design.google.com/icons/
+
+
+C:\Users\Administrator\.android>keytool -list -v -keystore D:\Android_studio_project\key_store\StepView.jks
+keytool -exportcert
+
+netstat -ano | findstr "5037"
+chmod -R  777 /data/
+adb shell su -c "chmod 777 /data"
+adb shell su -c "chmod 777 /data/data"
+
+
+%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\
+;%JAVA_HOME%\bin;d:\Git\cmd
