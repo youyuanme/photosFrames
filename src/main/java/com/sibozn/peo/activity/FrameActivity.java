@@ -496,6 +496,7 @@ public class FrameActivity extends BaseActivity implements HttpListener {
                                 // 根据包名打开对应的设置界面
                                 .setData(Uri.parse("package:" + mContext.getPackageName()));
                         startActivity(intent);
+
                     }
                 })
                 .create().show();
