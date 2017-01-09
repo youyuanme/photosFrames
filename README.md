@@ -1,6 +1,6 @@
 # photosFrames
-peo</br>
-![效果图1](https://github.com/youyuanme/photosFrames/blob/master/iamges/device-2016-10-31-175503_36-118.gif?raw=true)</br>
+###peo<br/>
+![效果图1](https://github.com/youyuanme/photosFrames/blob/master/iamges/device-2016-10-31-175503_36-118.gif?raw=true)<br/>
 ![效果图2](https://github.com/youyuanme/photosFrames/blob/master/iamges/device-2016-10-31-175503_3-446.gif?raw=true)
 大标题
 ===================================
