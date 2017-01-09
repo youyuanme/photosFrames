@@ -415,7 +415,9 @@ public class FrameActivity extends BaseActivity implements HttpListener {
                         request.proceed();
                     }
                 })
-                .create().show();
+                .setCancelable(false)
+                .create()
+                .show();
     }
 
     //被拒绝

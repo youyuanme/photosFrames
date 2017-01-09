@@ -102,7 +102,6 @@ public class DetailActivity extends BaseActivity implements HttpListener {
     private DownloadListener downloadListener;
     private String downloadFilePath, downloadFileName;
     private String beanString;
-    private int permissionType;
 
     @Override
     public int getContentViewId() {
@@ -153,7 +152,7 @@ public class DetailActivity extends BaseActivity implements HttpListener {
             @Override
             public void onStart(int what, boolean isResume, long rangeSize, Headers
                     responseHeaders, long allCount) {
-                Log.e(TAG, "onStart: -rangeSize->>>" + rangeSize + "-allCount->>" + allCount);
+                //Log.e(TAG, "onStart: -rangeSize->>>" + rangeSize + "-allCount->>" + allCount);
             }
 
             @Override
@@ -163,11 +162,11 @@ public class DetailActivity extends BaseActivity implements HttpListener {
                             position, false));// 发送黏性事件
                 }
                 if (TextUtils.equals(id, what + "")) {
-                    Log.e(TAG, "-----------------onProgress: " + "----id----" + id + "----what--" + what);
+                    //Log.e(TAG, "-----------------onProgress: " + "----id----" + id + "----what--" + what);
                     //ProgressBar progressBar = (ProgressBar) findViewById(R.id.detail_progressBar);
                     progressBar.setProgress(progress);
-                    Log.e(TAG, "onProgress:------progressBar.toString()-- " + progressBar.toString());
-                    Log.e(TAG, "onProgress:---------- " + progress);
+                    //Log.e(TAG, "onProgress:------progressBar.toString()-- " + progressBar.toString());
+                    //Log.e(TAG, "onProgress:---------- " + progress);
                 }
 
             }
@@ -226,7 +225,8 @@ public class DetailActivity extends BaseActivity implements HttpListener {
                     break;
                 case "1"://1是下载完成
                     // 下载完成并且查看本地是否删除下载文件
-                    DetailActivityPermissionsDispatcher.WriteSDPermissionWithCheck(this, PERMISSION_IS_DOWNLOADED_CODE);
+                    DetailActivityPermissionsDispatcher
+                            .WriteSDPermissionWithCheck(this, PERMISSION_IS_DOWNLOADED_CODE);
                     break;
             }
         }
@@ -244,7 +244,8 @@ public class DetailActivity extends BaseActivity implements HttpListener {
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[]
             grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        DetailActivityPermissionsDispatcher.onRequestPermissionsResult(this, requestCode, grantResults);
+        DetailActivityPermissionsDispatcher
+                .onRequestPermissionsResult(this, requestCode, grantResults);
     }
 
     @NeedsPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)//权限申请成功
@@ -275,20 +276,20 @@ public class DetailActivity extends BaseActivity implements HttpListener {
 
     @OnShowRationale(Manifest.permission.WRITE_EXTERNAL_STORAGE) //申请前告知用户为什么需要该权限
     public void showRationaleForWriteSD(final PermissionRequest request) {
-        builder.setMessage(R.string.sd_permission_string);
-        builder.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-                request.cancel();
-            }
-        });
-        builder.setPositiveButton(R.string.confirm, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-                request.proceed();
-            }
-        });
-        builder.create().show();
+        builder.setMessage(R.string.sd_permission_string)
+                .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        request.cancel();
+                    }
+                })
+                .setPositiveButton(R.string.confirm, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        request.proceed();
+                    }
+                })
+                .create().show();
     }
 
     //被拒绝
@@ -300,22 +301,22 @@ public class DetailActivity extends BaseActivity implements HttpListener {
     //被拒绝并且勾选了不再提醒
     @OnNeverAskAgain(Manifest.permission.WRITE_EXTERNAL_STORAGE)
     public void onWriteSDNeverAskAgain() {
-        builder.setMessage(R.string.sd_permission_setting);
-        builder.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.dismiss();
-            }
-        });
-        builder.setPositiveButton(R.string.setting, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
-                intent.setData(Uri.parse("package:" + mContext.getPackageName())); // 根据包名打开对应的设置界面
-                startActivity(intent);
-            }
-        });
-        builder.create().show();
+        builder.setMessage(R.string.sd_permission_setting)
+                .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                })
+                .setPositiveButton(R.string.setting, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
+                        intent.setData(Uri.parse("package:" + mContext.getPackageName())); // 根据包名打开对应的设置界面
+                        startActivity(intent);
+                    }
+                })
+                .create().show();
     }
 
     // 当一个Message Event提交的时候这个方法会被调用
@@ -359,28 +360,28 @@ public class DetailActivity extends BaseActivity implements HttpListener {
                 }
                 break;
             case R.id.iv_close:
-                AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
-                builder.setMessage(R.string.stop_images);
-                builder.setCancelable(false);
-                builder.setNegativeButton(R.string.jixu_string, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        dialogInterface.dismiss();
-                    }
-                });
-                builder.setPositiveButton(R.string.stop_download, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        PreferenceHelper.write(mContext, Appconfig.APP_CONFIG, id, "-1");// 0是正在下载，1是下载完成，-1没有下载
-                        if (CallServer.getRequestInstance() != null) {
-                            CallServer.getRequestInstance().cancelDownloadByKey(id);
-                        }
-                        displayNoDownloadState();
-                        EventBus.getDefault().postSticky(new MessageEvent(true, feature));
-                        dialogInterface.dismiss();
-                    }
-                });
-                builder.show();
+                builder.setMessage(R.string.stop_images)
+                        .setCancelable(false)
+                        .setNegativeButton(R.string.jixu_string, new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                dialogInterface.dismiss();
+                            }
+                        })
+                        .setPositiveButton(R.string.stop_download, new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                PreferenceHelper.write(DetailActivity.this, Appconfig.APP_CONFIG, id, "-1");
+                                // 0是正在下载，1是下载完成，-1没有下载
+                                if (CallServer.getRequestInstance() != null) {
+                                    CallServer.getRequestInstance().cancelDownloadByKey(id);
+                                }
+                                displayNoDownloadState();
+                                EventBus.getDefault().postSticky(new MessageEvent(true, feature));
+                                dialogInterface.dismiss();
+                            }
+                        })
+                        .create().show();
                 break;
             case R.id.iv_share:
                 break;
@@ -389,12 +390,11 @@ public class DetailActivity extends BaseActivity implements HttpListener {
 
     @Override
     public void onSucceed(int what, Response response) {
-        String online = null, parent_id = null;
+        String online = null;
         JSONObject jsonObject = null;
         try {
             jsonObject = new JSONObject(response.get().toString());
             online = jsonObject.getString("online");
-            parent_id = jsonObject.getString("parent_id");
         } catch (JSONException e) {
             e.printStackTrace();
         }

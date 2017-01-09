@@ -1,11 +1,9 @@
 package com.sibozn.peo.activity;
 
 import android.content.Context;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-
 
 import com.sibozn.peo.R;
 import com.sibozn.peo.dialog.WaitDialog;
