@@ -1,7 +1,7 @@
 # photosFrames
 ###peo<br/>
 ![效果图1](https://github.com/youyuanme/photosFrames/blob/master/iamges/device-2016-10-31-175503_36-118.gif?raw=true)<br/>
-![效果图2](https://github.com/youyuanme/photosFrames/blob/master/iamges/device-2016-10-31-175503_3-446.gif?raw=true)
+![效果图2](https://github.com/youyuanme/photosFrames/blob/master/iamges/device-2016-10-31-175503_3-446.gif?raw=true)<br/>
 大标题
 ===================================
   大标题一般显示工程名,类似html的\<h1\><br/>
