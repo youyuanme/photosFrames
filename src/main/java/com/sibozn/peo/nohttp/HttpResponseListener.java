@@ -94,7 +94,7 @@ public class HttpResponseListener<T> implements OnResponseListener<T> {
      */
     @Override
     public void onFinish(int what) {
-        if (mWaitDialog != null && mWaitDialog.isShowing())
+        if (mWaitDialog != null && mContext != null && mWaitDialog.isShowing())
             mWaitDialog.dismiss();
     }
 

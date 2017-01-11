@@ -898,7 +898,7 @@ public class FrameActivity extends BaseActivity implements HttpListener {
                         request.add("photoId", photoId);// 添加1个文件
                         request.add("effectId", detailBean.getApi_id());// 添加1个文件
                         // 添加到请求队列
-                        CallServer.getRequestInstance().add(mContext, UP_DATA_EFFECT,
+                        CallServer.getRequestInstance().add(FrameActivity.this, UP_DATA_EFFECT,
                                 request, FrameActivity.this, false, false);
                     }
                 }

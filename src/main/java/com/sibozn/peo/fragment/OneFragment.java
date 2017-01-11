@@ -203,7 +203,7 @@ public class OneFragment extends BaseFragment implements BaseSliderView.OnSlider
             slider.setDuration(4000);
             slider.addOnPageChangeListener(this);
             Request<String> request = NoHttp.createStringRequest(Constants.APP_UPDATA_URL, RequestMethod.GET);
-            CallServer.getRequestInstance().add(mContext, APP_UPDATA_URL_CODE, request, this, false, false);
+            CallServer.getRequestInstance().add(this.getActivity(), APP_UPDATA_URL_CODE, request, this, false, false);
         } else {
             Log.e(TAG, "initData--DemoAcitvity传过来的数据-featureList为空->>: ");
         }
@@ -425,8 +425,8 @@ public class OneFragment extends BaseFragment implements BaseSliderView.OnSlider
                     }
                 });
         CallServer.getRequestInstance().mDownloadRequests.put(beans.id.toString(), downloadRequest);
-        Log.e(TAG, "onDownLoadClickListener: " + CallServer.getRequestInstance().mDownloadRequests
-                .get(beans.id.toString().toString()));
+        //Log.e(TAG, "onDownLoadClickListener: " + CallServer.getRequestInstance().mDownloadRequests
+        //.get(beans.id.toString().toString()));
     }
 
     @OnShowRationale(Manifest.permission.WRITE_EXTERNAL_STORAGE)//申请前告知用户为什么需要该权限
