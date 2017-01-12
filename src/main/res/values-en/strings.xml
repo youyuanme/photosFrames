@@ -9,9 +9,7 @@
     <string name="use_string">Use</string>
     <string name="title_activity_base">BaseActivity</string>
     <string name="wait_dialog_title">Please wait for a while…</string>
-    <string name="add_widget">Add widget</string>
     <string name="app_name">Photo Effects</string>
-    <string name="appwidget_text">EXAMPLE</string>
     <string name="save_successful">Photo save success. File path: %s</string>
     <string name="save_loading">Saving photo...</string>
     <string name="rv_with_footer_pull_load_more">Pull or click to load more</string>
@@ -25,7 +23,6 @@
     <string name="stop_images">Stop to download this effects</string>
     <string name="no_gifs_data">No more</string>
     <string name="get_data_error">Network error, please try again</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="select_load_iamge">Please select a photo first</string>
     <string name="select_mate_iamge">Please select an effect</string>
     <string name="ok">ok</string>

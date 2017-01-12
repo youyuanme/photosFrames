@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">写真のエフェクト</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="save_successful">图片保存成功！\n请到%s路径查看。</string>
+    <string name="save_loading">保存当前图片中...</string>
+    <string name="wait_dialog_title">Please wait for a while…</string>
+    <string name="rv_with_footer_pull_load_more">上拉或点击加载更多</string>
+    <string name="rv_with_footer_loading">加载中…</string>
+    <string name="rv_with_footer_empty">没有数据啦</string>
+    <string name="no_gifs_data">データのこれ以上ありません</string>
+    <string name="exit_string">もう一度戻ると終了します。</string>
+    <string name="xiaoxitishi">提示消息</string>
+    <string name="download">ダウンロード</string>
+    <string name="download_over">ダウンロードした</string>
+    <string name="on_line">オンライン</string>
+    <string name="get_data_error">ネットワークエラーです。もう一度お試しください</string>
+    <string name="use_string">使用</string>
+    <string name="jixu_string">持続する</string>
+    <string name="stop_download">停止下载</string>
+    <string name="stop_images">停止下载该组图片</string>
+    <string name="data_download_defeated">ネットワークエラーです。もう一度お試しください。\n</string>
+    <string name="new_">最新の</string>
+    <string name="editors_choice">編集者の選択</string>
+    <string name="more_effects">その他のエフェクト</string>
+    <string name="select_load_iamge">请选择本地图片！</string>
+    <string name="select_mate_iamge">请选择匹配图片！</string>
+    <string name="ok">それは</string>
+    <string name="download_image_error">写真のエラーをダウンロードしてください。もう一度お試しください。</string>
+    <string name="sd_ka_no">请安装sd卡！</string>
+    <string name="share">分享</string>
+    <string name="image_return_error">写真のエラーを読んで、もう一度お試しください。</string>
+    <string name="error_iamge">エラーが発生しました。もう一度お試しください。</string>
+    <string name="abandon">舍て</string>
+    <string name="save">保存</string>
+    <string name="cancel">キャンセル</string>
+    <string name="confirm">確認する</string>
+    <string name="no_network_error">あなたのネットワークを確認してください</string>
+    <string name="sd_permission">此app需要访问本地sd卡的权限</string>
+    <string name="refuse_sd_permission">あなたはSDカードのアクセスを使用することを拒否し、現在のアプリケーションは、セットアップインターフェイスで開いて使用することはできません</string>
+    <string name="exit">出口</string>
+    <string name="setting">设置</string>
+    <string name="sd_permission_string">使用此功能需要访问本地sd卡的权限</string>
+    <string name="refuse_sd_permission_string">あなたは許可を拒否しましたが、この機能は利用できません</string>
+    <string name="camera_permission">この機能は、カメラを使用する許可を必要とします</string>
+    <string name="crop_error">せん断の写真は失敗しました！</string>
+    <string name="sd_permission_setting">当前应用缺少读写SD卡权限,请去设置界面打开\n打开之后按两次返回键可回到该应用哦</string>
+    <string name="go_look">見に行く</string>
+    <string name="select_local_image">请选择本地图片</string>
+    <string name="upload_failed">上传当前图片失败，是否重新上传图片？</string>
+    <string name="no_string">いいえ</string>
+    <string name="request_timeout">要求タイムアウト、ネットワークが不良、またはサーバーが安定していません。</string>
+    <string name="unknown_error">未知错误。</string>
+    <string name="update_message">有新版更新了，是否去google play更新？</string>
+    <string name="hot">ホットスポット</string>
+
+    <item name="tag_type" type="id"/>
+    <item name="tag_position" type="id"/>
+    <item name="tag_beans" type="id"/>
+</resources>
