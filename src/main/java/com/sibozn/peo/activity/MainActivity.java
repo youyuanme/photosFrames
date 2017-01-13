@@ -74,11 +74,12 @@ public class MainActivity extends BaseActivity implements HttpListener {
 
     @Override
     protected void onMyCreate(Bundle savedInstanceState) {
-        ActivityManager activityManager = (ActivityManager) this.getSystemService(Context.ACTIVITY_SERVICE);
+        /*ActivityManager activityManager = (ActivityManager) this.getSystemService(Context.ACTIVITY_SERVICE);
         int memClass = activityManager.getMemoryClass();//64，以m为单位
         Log.e(TAG, "onMyCreate:-----memClass----->>>> " + memClass);
         int LargeMemory = activityManager.getLargeMemoryClass();
         Log.e(TAG, "onMyCreate:--------LargeMemory=-->> " + LargeMemory);
+        */
         featureList = new ArrayList<Beans>();
         effectsList = new ArrayList<Beans>();
         fragments = new ArrayList<Fragment>();
@@ -90,20 +91,14 @@ public class MainActivity extends BaseActivity implements HttpListener {
         tabs.addTab(tabs.newTab().setText(titles.get(0)), true);
         tabs.addTab(tabs.newTab().setText(titles.get(1)), false);
         beansDao = MyApplication.instance.getDaoSession().getBeansDao();
-        showDialog();
-        Request<String> request = NoHttp.createStringRequest(Constants.MAIN_URL, RequestMethod.GET);
-        CallServer.getRequestInstance().add(this, MAIN_URL_CODE, request, this, false, false);
         MainActivityPermissionsDispatcher.needsPermissionWithCheck(this);
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        Log.e(TAG, "onResume: ");
     }
 
     @NeedsPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)//权限申请成功
     public void needsPermission() {
+        showDialog();
+        Request<String> request = NoHttp.createStringRequest(Constants.MAIN_URL, RequestMethod.GET);
+        CallServer.getRequestInstance().add(this, MAIN_URL_CODE, request, this, false, false);
         Log.e(TAG, "needsPermission: ----权限申请成功----");
     }
 
