@@ -53,4 +53,5 @@
     <string name="unknown_error">Unknown error.</string>
     <string name="update_message">A new version of PEO is available, update now?</string>
     <string name="hot">HOT</string>
+    <string name="u_be_the_launcher_man_u"><u>Be the launcher man ?</u></string>
 </resources>

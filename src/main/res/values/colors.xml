@@ -9,4 +9,5 @@
     <color name="windowBackground">#1C1C1C</color>
     <color name="overlay">#AA1C1C1C</color>
     <color name="divider">#333333</color>
+    <color name="underline_color">#D0A0A1</color>
 </resources>

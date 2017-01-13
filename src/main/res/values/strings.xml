@@ -52,6 +52,7 @@
     <string name="unknown_error">未知错误。</string>
     <string name="update_message">有新版更新了，是否去google play更新？</string>
     <string name="hot">HOT</string>
+    <string name="u_be_the_launcher_man_u"><u>Be the launcher man ?</u></string>
 
     <item name="tag_type" type="id"/>
     <item name="tag_position" type="id"/>
