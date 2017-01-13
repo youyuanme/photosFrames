@@ -11,6 +11,7 @@
     <style name="SplashTheme" parent="BaseTheme">
         <item name="android:windowBackground">@mipmap/landing</item>
         <item name="android:windowFullscreen">true</item>
+        <item name="windowNoTitle">true</item>
         <item name="android:windowContentOverlay">@null</item>
     </style>
 

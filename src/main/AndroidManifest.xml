@@ -32,14 +32,17 @@
             android:value="google"/>
 
         <activity
-            android:name=".activity.MainActivity"
-            >
-            <!--android:theme="@style/SplashTheme"-->
+            android:name=".activity.SplashActivity"
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="false"
+            >
         </activity>
         <activity
             android:name=".activity.FrameActivity"
