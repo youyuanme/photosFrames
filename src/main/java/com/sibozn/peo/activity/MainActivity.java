@@ -99,7 +99,6 @@ public class MainActivity extends BaseActivity implements HttpListener {
         showDialog();
         Request<String> request = NoHttp.createStringRequest(Constants.MAIN_URL, RequestMethod.GET);
         CallServer.getRequestInstance().add(this, MAIN_URL_CODE, request, this, false, false);
-        Log.e(TAG, "needsPermission: ----权限申请成功----");
     }
 
     @Override
