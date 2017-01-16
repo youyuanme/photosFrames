@@ -22,12 +22,14 @@ public class SplashActivity extends AppCompatActivity {
 
     @BindView(R.id.tv_underline)
     TextView tv_underline;
+    private Handler handler;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
         ButterKnife.bind(this);
+        handler = new Handler();
         gotoYindaoye();
     }
 
@@ -35,13 +37,14 @@ public class SplashActivity extends AppCompatActivity {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.tv_underline:
+                handler.removeCallbacksAndMessages(null);
                 tv_underline.setTextColor(getResources().getColor(R.color.colorPrimary));
                 break;
         }
     }
 
     private void gotoYindaoye() {
-        new Handler().postDelayed(new Runnable() {
+        handler.postDelayed(new Runnable() {
             @Override
             public void run() {
                 startActivity(new Intent(SplashActivity.this, MainActivity.class));
