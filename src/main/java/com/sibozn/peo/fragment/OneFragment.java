@@ -69,6 +69,7 @@ import permissions.dispatcher.OnShowRationale;
 import permissions.dispatcher.PermissionRequest;
 import permissions.dispatcher.RuntimePermissions;
 
+import static com.sibozn.peo.R.id.cancel_action;
 import static com.sibozn.peo.R.id.progressBar;
 
 //http://www.jianshu.com/p/d4a9855e92d3
@@ -323,28 +324,26 @@ public class OneFragment extends BaseFragment implements BaseSliderView.OnSlider
     public void onDownLoadClickListener(View view, ProgressBar progressBar) {
         Beans beans = (Beans) view.getTag(R.id.tag_beans);
         final int position = (int) view.getTag(R.id.tag_position);
-        final int type = (int) view.getTag(R.id.tag_type);
+        int type = (int) view.getTag(R.id.tag_type);
         String str = ((TextView) view).getText().toString();
         // 事件统计
         Map<String, String> HashMap = new HashMap<>();
         HashMap.put("effectID", beans.id + "");
         MobclickAgent.onEvent(mContext, "count_effect", HashMap);
-        if (TextUtils.equals(str, getString(R.string.use_string))) {
-            Intent intent = new Intent(mContext, FrameActivity.class);
-            intent.putExtra("beans", beans.toString());
-            startActivity(intent);
-            return;
-        } else if (TextUtils.equals(str, getString(R.string.on_line))) {
-            Intent intent = new Intent(mContext, FrameActivity.class);
-            intent.putExtra("beans", beans.toString());
-            startActivity(intent);
-            return;
-        }
-        if (TextUtils.equals("0", beans.online)) {// 0是下载，1是在线
-            progressBar.setVisibility(View.VISIBLE);
-            view.setVisibility(View.GONE);
-            OneFragmentPermissionsDispatcher.downloadWithCheck(this, beans, type, position);
-        } else if (TextUtils.equals("1", beans.online)) {// 在线
+        switch (str) {
+            case "下载":
+                progressBar.setVisibility(View.VISIBLE);
+                view.setVisibility(View.GONE);
+                OneFragmentPermissionsDispatcher.downloadWithCheck(this, beans, type, position);
+                break;
+            case "使用":
+                startActivity(new Intent(mContext, FrameActivity.class)
+                        .putExtra("beans", beans.toString()));
+                break;
+            case "在线":
+                startActivity(new Intent(mContext, FrameActivity.class)
+                        .putExtra("beans", beans.toString()));
+                break;
 
         }
     }
@@ -370,7 +369,7 @@ public class OneFragment extends BaseFragment implements BaseSliderView.OnSlider
                     public void onStart(int what, boolean isResume, long rangeSize, Headers responseHeaders, long
                             allCount) {
                         // 下载开始
-                        Log.e(TAG, "onStart: -rangeSize->>>" + rangeSize + "-allCount->>" + allCount);
+                        //Log.e(TAG, "onStart: -rangeSize->>>" + rangeSize + "-allCount->>" + allCount);
                     }
 
                     @Override

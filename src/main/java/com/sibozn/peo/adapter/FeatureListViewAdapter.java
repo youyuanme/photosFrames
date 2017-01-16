@@ -143,15 +143,6 @@ public class FeatureListViewAdapter extends MyBaseAdapter<Beans> {
         viewHolderData.tvDownload.setEnabled(true);
     }
 
-    public void notifyDataSetChanged(ListView listView, int position) {
-        int firstVisiblePosition = listView.getFirstVisiblePosition();
-        int lastVisiblePosition = listView.getLastVisiblePosition();
-        if (position >= firstVisiblePosition && position <= lastVisiblePosition) {
-            View item = listView.getChildAt(position - firstVisiblePosition);
-            getView(position, item, listView);
-        }
-    }
-
     public interface OnDownLoadClickListener {
         void onDownLoadClickListener(View view, ProgressBar progressBar);
     }
