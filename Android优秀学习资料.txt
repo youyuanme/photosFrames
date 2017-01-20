@@ -126,7 +126,6 @@ netstat -ano | findstr "5037"
 chmod -R  777 /data/
 adb shell su -c "chmod 777 /data"
 adb shell su -c "chmod 777 /data/data"
-
-
+333333333333333333333333333
 %SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\
 ;%JAVA_HOME%\bin;d:\Git\cmd
