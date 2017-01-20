@@ -41,6 +41,7 @@ android-saripaar：Android UI输入验证框架 http://blog.chengyunfeng.com/?p=
 OkHttp使用教程； www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/0106/2275.html
 FastJson--阿里巴巴公司开源的速度最快的Json和对象转换工具 http://blog.csdn.net/djun100/article/details/24237371
 
+Android_androidquery第三方库_Android-Query使用详解 http://blog.csdn.net/u013035016/article/details/52768454
 
 夏安明, 博客 : http://blog.csdn.net/xiaanming
 
