@@ -56,4 +56,5 @@
     <item name="tag_type" type="id"/>
     <item name="tag_position" type="id"/>
     <item name="tag_beans" type="id"/>
+    <string name="u_be_the_launcher_man_u"><u>Be the launcher man ?</u></string>
 </resources>

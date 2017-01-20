@@ -34,7 +34,6 @@
     <string name="save">保存</string>
     <string name="cancel">取消</string>
     <string name="confirm">确定</string>
-    <string name="no_network_error">请检查网络</string>
     <string name="sd_permission">此app需要访问本地sd卡的权限</string>
     <string name="refuse_sd_permission">您拒绝的使用SD卡权限，当前app无法使用，请在设置界面打开</string>
     <string name="exit">退出</string>
@@ -57,4 +56,5 @@
     <item name="tag_type" type="id"/>
     <item name="tag_position" type="id"/>
     <item name="tag_beans" type="id"/>
+    <string name="no_network_error">no network,check your network connection</string>
 </resources>
