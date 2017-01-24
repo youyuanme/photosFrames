@@ -18,8 +18,8 @@ Android学习之BottomNavigationBar实现Android特色底部导航栏 http://blo
 谷歌集成地图:  https://developers.google.com/maps/documentation/android-api/infowindows?hl=zh-cn#info_window_events
 Android应用Design Support Library完全使用实例 http://www.open-open.com/lib/view/open1433385856119.html
 Android Material Design简单使用  http://www.cnblogs.com/android-blogs/p/5632103.html
-	ANDROID干货 http://www.cnblogs.com/tianmanyi/p/5509404.html
-	Android开源项目分类汇总 http://hunankeda110.iteye.com/blog/2103569
+ANDROID干货 http://www.cnblogs.com/tianmanyi/p/5509404.html
+Android开源项目分类汇总 http://hunankeda110.iteye.com/blog/2103569
 Android-Universal-Image-Loader详解 http://blog.csdn.net/yang786654260/article/details/44300833
 Glide 系列预览 http://mrfu.me/2016/02/27/Glide_Caching_Basics/
 Giphy/GiphyAPI https://github.com/Giphy/GiphyAPI
