@@ -28,11 +28,9 @@ Android-Librarys-Top-100.md https://github.com/Freelander/Android_Data/blob/mast
 国内即时通讯和社交系统平台   https://github.com/CameloeAnthony/Perfect_IM_SNS
 【转】android MD设计 http://www.cnblogs.com/syjhsgcc/p/4771931.html
 图片压缩工具： https://www.tinypng.com/
-
 推荐网站
   1.Material Palette  http://www.materialpalette.com/pink/amber
   2.Material Up    http://www.materialup.com/posts/c/market
-
 Jianqiu's blog  http://niorgai.github.io/2016/03/20/Android-transulcent-status-bar/
 
 android-saripaar：Android UI输入验证框架 http://blog.chengyunfeng.com/?p=530  https://github.com/ragunathjawahar/android-saripaar
@@ -129,6 +127,8 @@ gcm 推送：http://my.oschina.net/nicsun/blog/98184
 
 使用SwipeRefreshLayout和RecyclerView实现仿“简书”下拉刷新和上拉加载更多
 http://blog.csdn.net/leoleohan/article/details/50989549
+
+wangjinkezhang@gmail.com
 
 netstat -ano | findstr "5037"
 chmod -R  777 /data/
