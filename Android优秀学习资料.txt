@@ -35,7 +35,6 @@ Android-Librarys-Top-100.md https://github.com/Freelander/Android_Data/blob/mast
 
 Jianqiu's blog  http://niorgai.github.io/2016/03/20/Android-transulcent-status-bar/
 
-
 android-saripaar：Android UI输入验证框架 http://blog.chengyunfeng.com/?p=530  https://github.com/ragunathjawahar/android-saripaar
 
 OkHttp使用教程； www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/0106/2275.html
@@ -71,9 +70,7 @@ qiujuer.net, 博客 : http://blog.csdn.net/qiujuer/, github : https://github.com
 老罗 http://blog.csdn.net/luoshengyang/article/details/6557518
 Keegan小钢 http://keeganlee.me/post/android/20151031
 
-
 Mr.Simple ( 群主 ), 博客 : http://blog.csdn.net/bboyfeiyu, github : https://github.com/bboyfeiyu
-
 
 你应该关注的github项目 
 
@@ -125,7 +122,6 @@ keytool -exportcert
 Android中脱离WebView使用WebSocket实现群聊和推送功能
 http://www.cnblogs.com/wlfcolin/p/5193583.html?utm_source=tuicool&utm_medium=referral
 http://www.tuicool.com/articles/Jn6jYbR
-
 
 gcm 推送：http://my.oschina.net/nicsun/blog/98184
 
