@@ -95,6 +95,7 @@ http://www.tuicool.com/articles/Jn6jYbR
 
 使用GCM服务（Google Cloud Messaging）实现Android消息推送
 http://www.cnblogs.com/zhwl/p/3370426.html
+android service 框架下载 http://www.apkmirror.com
 
 2015最新Android基础入门教程》 https://wizardforcel.gitbooks.io/w3school-android/content/149.html
 阅读Android源码的一些知识 http://www.open-open.com/lib/view/open1455200540245.html
