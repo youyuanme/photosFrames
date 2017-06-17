@@ -1,3 +1,5 @@
+自动生成Java对象-》jsonschema2pojo http://www.jsonschema2pojo.org/
+
 从零开始的RxJava2.0教程(一)基础 http://blog.csdn.net/qq_35064774/article/details/53057332
 
  Android实战——RxJava2+Retrofit+RxBinding解锁各种新姿势 http://blog.csdn.net/qq_30379689/article/details/68958173
