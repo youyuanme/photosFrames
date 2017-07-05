@@ -1,3 +1,5 @@
+运行时权限 http://sendtion.cn/archives/551
+
 在线看Android系统源码 http://androidxref.com ,http://www.grepcode.com/
 
 自动生成Java对象-》jsonschema2pojo http://www.jsonschema2pojo.org/
