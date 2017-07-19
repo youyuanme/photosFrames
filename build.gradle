@@ -24,6 +24,7 @@ android {
     }
     buildTypes {
         release {
+            buildConfigField "boolean", "LOG_DEBUG", "false"  // 不显示Log
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             zipAlignEnabled true
@@ -41,6 +42,7 @@ android {
             }
         }
         debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"  // 显示Log
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'),'proguard-rules.pro'
             zipAlignEnabled true
