@@ -1,6 +1,9 @@
  库的导入 ：https://jitpack.io/
 
 TextView字体对齐：&#160;&#12288;&#8194;&#8197;--->>他们与汉字换算关系就是1个汉字 = 4个&#160; = 4个&#8197; = 1个&#12288; = 2个&#8194;
+
+web 常用软件：https://uzer.me/z/apps
+
 运行时权限 http://sendtion.cn/archives/551
 
 列出项目中所有的依赖（包含依赖的子依赖）你可以用下面这个命令：./gradlew dependencies app:dependencies,./gradlew dependencies app:dependencies --configuration compile,http://www.jianshu.com/p/d6af80895417
