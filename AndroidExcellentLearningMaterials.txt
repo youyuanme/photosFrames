@@ -1,4 +1,6 @@
- 库的导入 ：https://jitpack.io/
+微信小程序教程系列：http://blog.csdn.net/michael_ouyang/article/details/62430905
+
+库的导入 ：https://jitpack.io/
 
 TextView字体对齐：&#160;&#12288;&#8194;&#8197;--->>他们与汉字换算关系就是1个汉字 = 4个&#160; = 4个&#8197; = 1个&#12288; = 2个&#8194;
 
