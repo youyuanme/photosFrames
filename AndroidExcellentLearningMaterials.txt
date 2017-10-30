@@ -1,4 +1,7 @@
+ShadowSocks（影梭）不完全指南:http://www.auooo.com/2015/06/26/shadowsocks%EF%BC%88%E5%BD%B1%E6%A2%AD%EF%BC%89%E4%B8%8D%E5%AE%8C%E5%85%A8%E6%8C%87%E5%8D%97/
+
 javaSE基础：http://www.runoob.com/java/java-networking.html
+
 图标工场 - 移动应用图标生成工具，一键生成所有尺寸的应用图标：http://icon.wuruihong.com/
 
 微信小程序教程系列：http://blog.csdn.net/michael_ouyang/article/details/62430905
