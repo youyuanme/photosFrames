@@ -1,3 +1,4 @@
+IntelliJ IDEA License Server本地搭建教程:http://blog.lanyus.com/archives/174.html
 Android Studio 缓存文件夹配置：http://www.voidcn.com/article/p-dpyneibb-qh.html
 
 获取百度网盘真实下载地址:http://www.cnblogs.com/flyings/p/7097739.html
